@@ -5,17 +5,19 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/maze"
-        android:label="@string/app_name"
+        android:label=""
         android:roundIcon="@mipmap/maze"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".InfoActivity"></activity>
     </application>
 
 </manifest>

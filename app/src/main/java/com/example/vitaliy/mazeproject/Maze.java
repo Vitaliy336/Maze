@@ -101,9 +101,9 @@ public class Maze implements Drawable {
         }
     }
 
-    public boolean isCrossroad(int x, int y) {
+   /* public boolean isCrossroad(int x, int y) {
         return isUsedCell(x, y);
-    }
+    }*/
 
     public boolean canPlayerGoTo(int x, int y) {
         return array[y][x];
