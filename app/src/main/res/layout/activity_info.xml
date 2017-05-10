@@ -48,7 +48,7 @@
                 android:id="@+id/viev4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Composition1" />
+                android:text="Vintage Elecro pop" />
 
             <TextView
                 android:id="@+id/view"
@@ -58,10 +58,11 @@
 
             <Button
                 android:id="@+id/MusicAuthor"
+                style="@android:style/Widget.Material.Light.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:text="Music Author" />
+                android:text="frankum" />
         </LinearLayout>
 
         <Button

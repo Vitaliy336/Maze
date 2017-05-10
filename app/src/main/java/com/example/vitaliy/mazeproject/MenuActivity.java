@@ -16,8 +16,9 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        startService(new Intent(this, MyService.class));
 
-     //   String fontPath = "fonts/Pixel.tff";
+        //   String fontPath = "fonts/Pixel.tff";
 
         Button start = (Button) findViewById(R.id.StartGame);
         start.setOnClickListener(this);
@@ -25,18 +26,19 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         Button info = (Button) findViewById(R.id.info);
         info.setOnClickListener(this);
 
-      // Typeface typeface = Typeface.createFromAsset(getAssets(), fontPath);
-      //  name.setTypeface(typeface);
+
+        // Typeface typeface = Typeface.createFromAsset(getAssets(), fontPath);
+        //  name.setTypeface(typeface);
 
         Animation scale = AnimationUtils.loadAnimation(this, R.anim.myscale);
         scale.setFillAfter(true);
-        scale.setStartOffset(5000);
+        scale.setStartOffset(0);
         name.setAnimation(scale);
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.StartGame:
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
