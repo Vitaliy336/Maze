@@ -8,7 +8,7 @@
         android:label="Maze"
         android:roundIcon="@mipmap/maze"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
             android:screenOrientation="portrait"
             android:name=".MenuActivity">

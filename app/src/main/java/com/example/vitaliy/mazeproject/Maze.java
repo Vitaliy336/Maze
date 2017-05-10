@@ -33,7 +33,7 @@ public class Maze implements Drawable {
 
     public Maze(int size) {
         wallPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        wallPaint.setColor(Color.BLUE);
+        wallPaint.setColor(Color.BLACK);
         this.size = size;
         array = new boolean[size][size];
         generateMaze();

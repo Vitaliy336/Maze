@@ -23,7 +23,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Created by" />
+                android:gravity="center"
+                android:text="Created by"
+                android:textSize="17sp" />
 
             <Button
                 android:id="@+id/button"
@@ -42,19 +44,25 @@
                 android:id="@+id/view2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Music" />
+                android:gravity="center"
+                android:text="Music"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/viev4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Vintage Elecro pop" />
+                android:gravity="center"
+                android:text="Vintage Elecro pop"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="By" />
+                android:gravity="center"
+                android:text="By"
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/MusicAuthor"
