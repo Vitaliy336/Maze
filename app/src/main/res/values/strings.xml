@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">MazeProject</string>
+    <string name="Create">create by</string>
+    <string name="Valish">Valish</string>
+    <string name="Music">Music</string>
+    <string name="Composition1">Vintage Electro pop</string>
+    <string name="by">By</string>
+    <string name="Frankum">Frankum</string>
+    <string name="Share">Share</string>
+    <string name="Label">Maze</string>
+    <string name="Start">Start</string>
+    <string name="More">More</string>
+    <string name="off">Off Music</string>
 </resources>
