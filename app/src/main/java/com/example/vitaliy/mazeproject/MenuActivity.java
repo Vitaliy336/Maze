@@ -25,6 +25,10 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         TextView name = (TextView) findViewById(R.id.Name);
         Button info = (Button) findViewById(R.id.info);
         info.setOnClickListener(this);
+        Button off = (Button)findViewById(R.id.off);
+        off.setOnClickListener(this);
+        Button on = (Button)findViewById(R.id.on);
+        on.setOnClickListener(this);
 
 
         // Typeface typeface = Typeface.createFromAsset(getAssets(), fontPath);
@@ -47,6 +51,10 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent1 = new Intent(this, InfoActivity.class);
                 startActivity(intent1);
                 break;
+            case R.id.on:
+                startService(new Intent(MenuActivity.this, MyService.class));
+            case R.id.off:
+                stopService(new Intent(MenuActivity.this, MyService.class));
         }
     }
 }

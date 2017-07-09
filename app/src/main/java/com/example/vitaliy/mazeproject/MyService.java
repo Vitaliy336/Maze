@@ -21,9 +21,13 @@ public class MyService extends Service {
     @Override
     public void onCreate() {
         Toast.makeText(this, "My Service Created", Toast.LENGTH_LONG).show();
-
         player = MediaPlayer.create(this, R.raw.frankumvintageelecropoploop);
         player.setLooping(true);
+    }
+    @Override
+    public void onStart (Intent intent, int startid) {
+        Toast.makeText(this, "My Service Started", Toast.LENGTH_LONG).show();
+        player.start();
     }
 
     @Override
@@ -32,9 +36,5 @@ public class MyService extends Service {
         player.stop();
     }
 
-    @Override
-    public void onStart(Intent intent, int startid) {
-        Toast.makeText(this, "My Service Started", Toast.LENGTH_LONG).show();
-        player.start();
-    }
+
 }

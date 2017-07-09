@@ -11,4 +11,10 @@
     <string name="Start">Start</string>
     <string name="More">More</string>
     <string name="off">Off Music</string>
+    <string name="on">On music</string>
+    <string name="start">Start</string>
+    <string name="Inf">Information</string>
+    <string name="Musc_author">Frankum</string>
+    <string name="share">Share</string>
+    <string name="msk">Music created by</string>
 </resources>

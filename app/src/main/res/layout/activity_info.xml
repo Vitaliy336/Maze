@@ -29,7 +29,7 @@
 
             <Button
                 android:id="@+id/button"
-                android:layout_width="wrap_content"
+                android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/Valish" />
@@ -44,40 +44,24 @@
                 android:id="@+id/view2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:gravity="center"
-                android:text="Music"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/viev4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Vintage Elecro pop"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="By"
+                android:text="@string/msk"
                 android:textSize="20sp" />
 
             <Button
                 android:id="@+id/MusicAuthor"
-                style="@android:style/Widget.Material.Light.Button"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Musc_author" />
+
+            <Button
+                android:id="@+id/share"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:text="frankum" />
+                android:text="@string/share" />
         </LinearLayout>
 
-        <Button
-            android:id="@+id/share"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:text="Share" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
