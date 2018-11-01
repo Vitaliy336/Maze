@@ -2,6 +2,7 @@ package com.example.vitaliy.mazeproject;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.util.AttributeSet;
 import android.view.View;
 
 /**
@@ -10,6 +11,14 @@ import android.view.View;
 
 public class MazeView extends View {
     private GameManager gameManager;
+
+    public MazeView(Context context){
+        super(context);
+    }
+
+    public MazeView(Context context, AttributeSet attr){
+        super(context, attr);
+    }
 
     public MazeView(Context context, GameManager gameManager){
         super(context);
