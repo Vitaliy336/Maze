@@ -11,7 +11,7 @@ import android.widget.Toast;
  */
 public class MyService extends Service {
     private static final String TAG = "MyService";
-    MediaPlayer player;
+    private MediaPlayer player;
 
     @Override
     public IBinder onBind(Intent intent) {

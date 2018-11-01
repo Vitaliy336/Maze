@@ -14,13 +14,12 @@ import java.util.List;
  */
 
 public class GameManager extends GestureDetector.SimpleOnGestureListener {
-    private List<Drawable> drawables = new ArrayList<>();
+    private final List<Drawable> drawables = new ArrayList<>();
     private View view;
     private Exit exit;
     private Player player;
     private Maze maze;
-    private Rect rect = new Rect();
-    private int screenSize;
+    private final Rect rect = new Rect();
 
     public GameManager(){
         create(5);
@@ -79,7 +78,7 @@ public class GameManager extends GestureDetector.SimpleOnGestureListener {
         this.view = view;
     }
     public void setScreenSize(int width, int height){
-        screenSize = Math.min(width,height);
+        int screenSize = Math.min(width, height);
         rect.set(
                 (width - screenSize)/2,
                 (height - screenSize)/2,

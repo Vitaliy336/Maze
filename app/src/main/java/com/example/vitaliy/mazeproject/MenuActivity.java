@@ -1,7 +1,6 @@
 package com.example.vitaliy.mazeproject;
 
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,16 +19,15 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
 
         //   String fontPath = "fonts/Pixel.tff";
 
-        Button start = (Button) findViewById(R.id.StartGame);
+        Button start = findViewById(R.id.StartGame);
         start.setOnClickListener(this);
-        TextView name = (TextView) findViewById(R.id.Name);
-        Button info = (Button) findViewById(R.id.info);
+        TextView name = findViewById(R.id.Name);
+        Button info = findViewById(R.id.info);
         info.setOnClickListener(this);
-        Button off = (Button)findViewById(R.id.off);
+        Button off = findViewById(R.id.off);
         off.setOnClickListener(this);
-        Button on = (Button)findViewById(R.id.on);
+        Button on = findViewById(R.id.on);
         on.setOnClickListener(this);
-
 
         // Typeface typeface = Typeface.createFromAsset(getAssets(), fontPath);
         //  name.setTypeface(typeface);

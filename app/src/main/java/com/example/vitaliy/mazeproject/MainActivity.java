@@ -8,7 +8,6 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 
 public class MainActivity extends AppCompatActivity {
-    private MazeView view;
     private GestureDetector gestureDetector;
 
     @Override
@@ -17,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         Log.i(MainActivity.class.getName(), "Title");
         GameManager gameManager = new GameManager();
-        view = new MazeView(this,gameManager);
+        MazeView view = new MazeView(this, gameManager);
 
         gestureDetector = new GestureDetector(this, gameManager);
         setContentView(view);

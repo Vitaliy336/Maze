@@ -10,9 +10,9 @@ import android.graphics.Rect;
  */
 
 public class Dot implements Drawable{
-    private int size;
-    protected Point point;
-    protected Paint paint;
+    private final int size;
+    protected final Point point;
+    protected final Paint paint;
 
     public Dot(int size, Point point, Paint paint) {
         this.size = size;

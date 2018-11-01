@@ -19,7 +19,7 @@ import java.util.Stack;
 
 public class Maze implements Drawable {
 
-    private Paint wallPaint;
+    private final Paint wallPaint;
     private final boolean[][] array;
 
     public int getSize() {
@@ -57,9 +57,11 @@ public class Maze implements Drawable {
         Random random = new Random();
         Stack<Point> stack = new Stack<>();
         stack.push(end);
+        Point current;
+        List<Point> unusedNeighbors;
         while (stack.size() > 0) {
-            Point current = stack.peek();
-            List<Point> unusedNeighbors = new LinkedList<>();
+            current = stack.peek();
+            unusedNeighbors = new LinkedList<>();
             //left
             if (current.x > 2) {
                 if (!isUsedCell(current.x - 2, current.y)) {

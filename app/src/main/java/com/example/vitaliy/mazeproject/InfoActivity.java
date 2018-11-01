@@ -13,7 +13,7 @@ public class InfoActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
-        Button share = (Button)findViewById(R.id.share);
+        Button share = findViewById(R.id.share);
         share.setOnClickListener(this);
     }
 
